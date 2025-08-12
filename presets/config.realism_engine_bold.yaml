@@ -1,0 +1,40 @@
+general:
+  backend: a1111
+  a1111_endpoint: http://127.0.0.1:7860
+  comfy_endpoint: http://127.0.0.1:8188
+  model_checkpoint: ''
+a_pass:
+  face_mask:
+    feather_pct: 0.1
+    expand_pct: 0.08
+  contour:
+    cheek_dark_strength: 0.16
+    jaw_dark_strength: 0.1
+    nose_dark_strength: 0.12
+    highlight_strength: 0.1
+    cheek_blur_pct: 0.02
+    jaw_blur_pct: 0.018
+    nose_blur_pct: 0.015
+    highlight_blur_pct: 0.03
+  unsharp:
+    radius_pct: 0.012
+    amount: 0.6
+    threshold: 3
+b_pass:
+  denoise: 0.24
+  cfg: 5.0
+  steps: 26
+  sampler: DPM++ SDE Karras
+  mask_blur_px: 12
+  prompt: defined cheekbones, sharp jawline, dramatic contour makeup, snatched nose,
+    matte skin, editorial beauty lighting, high detail skin, pores visible
+  negative: smudged makeup, overexposed highlights, plastic skin, waxy, artifacts,
+    blurry edges, color bleed
+  use_controlnet: true
+  controlnet_module: softedge_hed
+  controlnet_model: ''
+  controlnet_weight: 0.8
+io:
+  input_dir: input
+  work_dir: work
+  output_dir: output

@@ -1,0 +1,6 @@
+Prompt: defined cheekbones, sharp jawline, dramatic contour makeup, snatched nose, matte skin, editorial beauty lighting, high detail skin, pores visible
+Negative prompt: smudged makeup, overexposed highlights, plastic skin, waxy, artifacts, blurry edges, color bleed
+Steps: 24, Sampler: DPM++ SDE Karras, CFG scale: 4.5, Seed: -1, Size: Original, Denoising strength: 0.20
+Inpaint: Only masked, Inpaint area: Only masked, Mask blur: 14, Inpaint at full resolution: True, Padding: 32
+ControlNet: Enabled, Preprocessor: softedge_hed, Model: (your SDXL softedge model), Weight: 0.75, Guidance start/end: 0.0/1.0, Mode: Balanced
+(Use SDXL checkpoint: Realism Engine SDXL; optionally set general.model_checkpoint in config to auto-switch)
